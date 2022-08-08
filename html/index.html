@@ -2,109 +2,217 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css" type="text/css">
-    <title>Portafolio</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imparciales</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/e6d3741188.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
 </head>
-<body>
-    <H1> PORTAFOLIO</H1>
-    <h3>Iván Felipe Bermúdez Guarín </h3>
-    <div class="contenedor">
-        <div class="contenido">
-            <a href="">Sobre mí</a>
-            <a href="">Educación</a>
-            <a href="">Contacto</a>
+
+<body class="hidden">
+    <div class="centrado" id="onload">
+        <div class="lds-facebook"><div></div><div></div><div></div></div>
+    </div>
+    <header>
+        <nav id="nav" class="nav1" >
+            <div class="contenedor-nav">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="enlaces" id="enlaces">
+                    <a href="#" id="enlace-inicio" class="btn-header">Inicio</a>
+                    <a href="#" id="enlace-equipo" class="btn-header">Equipo</a>
+                    <a href="pagina2.html" id="enlace-servicio" class="btn-header">Servicios</a>
+                    <a href="#" id="enlace-trabajo" class="btn-header">Cursos</a>
+                    <a href="#" id="enlace-contacto" class="btn-header">Contacto</a>
+                </div>
+                <div class="icono" id="open">
+                    <span>&#9776;</span>
+                </div>
+            </div>
+        </nav>
+        <div class="textos">
+            <h1>Imparciales</h1>
+            <h3>Red de acompañamiento docente</h3>
         </div>
-    </div>
-<br>
-<br>
+    </header>
 
-<br>
-    <div class="videoclip">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/r87j_2F2MPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         <div class="hijo">
-        <a href="https://www.youtube.com/watch?v=r87j_2F2MPs" target="_blank"> VER EN YOUTUBE </a>
+    <main>
+        <section class="team contenedor" id="equipo">
+            <h3 id="equipo">Nuestro equipo</h3>
+            <p class="after">Conoce a la gente asombrosa y creativa</p>
+            <div class="card">
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/people2.jpg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Ivan Bermùdez</h4>
+                        <p>Licenciatura en tecnologìa</p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/people2.jpg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Ivan Bermùdez</h4>
+                        <p>Licenciatura en tecnologìa</p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/people2.jpg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Ivan Bermùdez</h4>
+                        <p>Licenciatura en tecnologìa</p>
+                    </div>
+                </div>
+                <!--agrego un nuevo content-card a mi gusto-->
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/people2.jpg" alt=""> <!--cambio imagen-->
+                    </div>
+                    <div class="texto-team">
+                        <h4>Ivan Bermùdez</h4>
+                        <p>Licenciatura en tecnologìa</p> 
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="about" id="servicio">
+            <div class="contenedor">
+                <h3>Nuestros servicios</h3>
+                <p class="after" style="color: white;">Siempre mejorando para ti</p>
+                <div class="servicios">
+                    <div class="caja-servicios">
+                        <img src="img/heart.png" alt="">
+                        <h4>Creativos y asombrosos</h4>
+                        <p>Elemento 1. Será afectado por justify-content. Architecto debitis quos cumque similique</p>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/responsive.png" alt="">
+                        <h4>Creativos y asombrosos</h4>
+                        <p>Elemento 2. Será afectado por justify-content. Architecto debitis quos cumque similique</p>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/efectos.png" alt="">
+                        <h4>Creativos y asombrosos</h4>
+                        <p>Elemento 3. Será afectado por justify-content.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work contenedor" id="trabajo">
+            <h3 style="color: blue;">Nuestro trabajo</h3>
+            <p class="after">Hacemos de algo simple algo extraordinario</p>
+            <div class="botones-work">
+                <ul>
+                    <li class="filter active" data-nombre='todos'>Todos</li>
+                    <li class="filter" data-nombre='diseño'>Texto</li>
+                    <li class="filter" data-nombre='programacion'>Audiovisual</li>
+                    <li class="filter" data-nombre='marketing'>Recurso</li>
+                </ul>
+            </div>
+            <div class="galeria-work">
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <iframe width="310" height="260" src="https://www.youtube.com/embed/HGlv7zFHlpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="textos-work">
+                        <h4>Audiovisual</h4>
+                    </div>
+                </div>
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <iframe width="310" height="260" src="https://www.youtube.com/embed/HGlv7zFHlpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="textos-work">
+                        <h4>Audiovisual</h4>
+                    </div>
+                </div>
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <iframe width="310" height="260" src="https://www.youtube.com/embed/HGlv7zFHlpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="textos-work">
+                        <h4>Audiovisual</h4>
+                    </div>
+                </div>
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <a href="https://docs.google.com/document/d/1T-lsYQUeswsbi8Jc0kh5QdmrtBZtZInj/edit?usp=sharing&ouid=111273695314103996407&rtpof=true&sd=true" target="_blank"><img src="img/texto.png" alt=""></a>
+                    </div>
+                    <div class="textos-work">
+                        <h4>Textual</h4>
+                    </div>
+                </div>
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/texto.png" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Textual</h4>
+                    </div>
+                </div>
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/texto.png" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Textual</h4>
+                    </div>
+                </div>
+                <div class="cont-work marketing">
+                    <div class="img-work">
+                        <img src="img/recurso.png" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Recursos</h4>
+                    </div>
+                </div>
+                <div class="cont-work marketing">
+                    <div class="img-work">
+                        <img src="img/recurso.png" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Recursos</h4>
+                    </div>
+                </div>
+                <div class="cont-work marketing">
+                    <div class="img-work">
+                        <img src="img/recurso.png" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Recursos</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contacto">
+        <div class="footer contenedor">
+            <div class="marca-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="iconos">
+                <i class="fab fa-youtube"> </i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <p style="font-size: 20px;">&#169;Todos los derechos Reservados</p>
         </div>
-    </div>
 
-    <div class="videoclip">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/27i3t6uVBHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         <div class="hijo">
-        <a href="https://www.youtube.com/embed/27i3t6uVBHw" target="_blank"> VER EN YOUTUBE </a>
-        </div>
-    </div>
-
-    <div class="videoclip">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/gKcJKmfPDfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         <div class="hijo">
-        <a href="https://youtu.be/gKcJKmfPDfo" target="_blank"> VER EN YOUTUBE </a>
-        </div>
-    </div>
-
-    <div class="videoclip">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/yEGNhuX5csY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         <div class="hijo">
-        <a href="https://www.youtube.com/embed/yEGNhuX5csY" target="_blank"> VER EN YOUTUBE </a>
-        </div>
-    </div>
-
-    <div class="videoclip">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ns9UpvuhUiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         <div class="hijo">
-        <a href="https://www.youtube.com/embed/Ns9UpvuhUiY" target="_blank"> VER EN YOUTUBE </a>
-        </div>
-    </div>
-
-    <div class="videoclip">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/irJ8QTdQl4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         <div class="hijo">
-        <a href="https://www.youtube.com/embed/irJ8QTdQl4Q" target="_blank"> VER EN YOUTUBE </a>
-        </div>
-    </div>
-
-<div class="videoclip">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/1ulBx3s3mwk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     <div class="hijo">
-    <a href="https://www.youtube.com/embed/1ulBx3s3mwk" target="_blank"> VER EN YOUTUBE </a>
-    </div>
-</div>
-
-<div class="videoclip">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ei6RIBldznA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     <div class="hijo">
-    <a href="https://www.youtube.com/embed/ei6RIBldznA" target="_blank"> VER EN YOUTUBE </a>
-    </div>
-</div>
-
-<div class="videoclip">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/T_CkTFD2r7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     <div class="hijo">
-    <a href="https://www.youtube.com/embed/T_CkTFD2r7E" target="_blank"> VER EN YOUTUBE </a>
-    </div>
-</div>
-
-<div class="videoclip">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/xBPjdD4VHM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     <div class="hijo">
-    <a href="https://www.youtube.com/embed/xBPjdD4VHM8" target="_blank"> VER EN YOUTUBE </a>
-    </div>
-</div>
-
-<div class="videoclip">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/toSJSf1DVg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     <div class="hijo">
-    <a href="https://www.youtube.com/embed/toSJSf1DVg0" target="_blank"> VER EN YOUTUBE </a>
-    </div>
-</div>
-
-<div class="videoclip">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/uTamW-mtDX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     <div class="hijo">
-    <a href="https://www.youtube.com/embed/uTamW-mtDX4" target="_blank"> VER EN YOUTUBE </a>
-    </div>
-</div>
-
-
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/filtro.js"></script>
 </body>
 </html>
